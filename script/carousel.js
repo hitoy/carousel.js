@@ -1,5 +1,5 @@
 /*
- * Carousel.js 3.0.0
+ * Carousel.js 3.1.0
  * Copyright Hito (vip@hitoy.org) All rights reserved
  *
  *
@@ -31,7 +31,7 @@
  */
 !function(w){
     'use strict';
-    var version = '3.0.0';
+    var version = '3.1.0';
 
     //轮播构造对象
     function Carousel(carouselscroll, duration, delay, loop, step, direction, mousewheel, indicator, nextbutton, previousbutton, carouselscrollactiveclass, activeclass){
@@ -406,11 +406,12 @@
             disablePageButton(previousbutton);
 
             //删除滚动列表的非元素节点
-            carouselscroll.childNodes.forEach(node=>{
-                if(node.nodeType !== 1){
-                    carouselscroll.removeChild(node);
+            var nodes = carouselscroll.childNodes;
+            for(var i = nodes.length-1; i>=0; i--){
+                if(nodes[i].nodeType !== 1){
+                    carouselscroll.removeChild(nodes[i]);
                 }
-            });
+            }
 
             //给滚动列表嵌套一层父元素，初始化其属性，删除子元素margin
             var carouselscrollrect = carouselscroll.getBoundingClientRect();
