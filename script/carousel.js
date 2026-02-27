@@ -1,7 +1,7 @@
 /*
  * Carousel.js 3.1.0
- * Copyright Hito (vip@hitoy.org) All rights reserved
- *
+ * Copyright ECLinkey Technology. All rights reserved
+ * Author Hito(vip@hitoy.org) 
  *
  * JS异步执行轮播组件库，由杨海涛编写，所有权力保留
  * 使用方法：
