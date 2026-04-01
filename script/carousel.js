@@ -1,37 +1,14 @@
 /*
- * Carousel.js 3.1.0
- * Copyright Hito (vip@hitoy.org) All rights reserved
- *
- *
- * JS异步执行轮播组件库，由杨海涛编写，所有权力保留
- * 使用方法：
- * 异步引用组件库，编写HTML和CSS，使HTML能在不适用JS条件下正常展示
- * 给轮播容器指定carousel-container属性
- * 给轮播滚动父元素指定carousel-scroll属性
- *
- *
- * 可选展示功能:
- * 为轮播容器添加一个子元素，并给予carousel-indicator属性
- * 即激活了轮播指示器功能，添加carousel-indicator-activeclass属性并赋值，即可指定焦点指示器类名
- * 为录播容器添加2个元素，并给与carousel-next-button或carousel-prev-button
- * 即激活了前后翻页功能
- * 注意: 为保持灵活性，基础样式请自行指定
- *
- * 其他可选展示样式
- * 为轮播容器添加不同属性，即可使用自定义功能
- * carousel-loop 无缝循环滚动
- * carousel-autoplay 自动滚动，可接方向end或start, end表示从索引小往索引大方向移动，start相反
- * carousel-delay 自动滚动间隔，单位毫秒，默认6000毫秒
- * carousel-duration 每次滚动时间，单位毫秒，默认600毫秒
- * carousel-step 每次滚动的个数，默认为窗口可见的完整对象个数
- * carousel-direction 滚动方向，x轴或y轴，默认x
- *
- * 为轮播carousel-scroll增加不同属性，可定义
- * carousel-slider-activeclass 可见的幻灯片class
+ * Carousel.js 3.2.0
+ * Copyright (c) 2026 EClinkey Technology Co., LTD
+ * SPDX-License-Identifier: Elastic-2.0
+ * 
+ * 可商业自用，禁止转售/托管服务
+ * Commercial use allowed, no resale/hosting as service
  */
 !function(w){
     'use strict';
-    var version = '3.1.0';
+    var version = '3.2.0';
 
     //轮播构造对象
     function Carousel(carouselscroll, duration, delay, loop, step, direction, mousewheel, indicator, nextbutton, previousbutton, carouselscrollactiveclass, activeclass){
